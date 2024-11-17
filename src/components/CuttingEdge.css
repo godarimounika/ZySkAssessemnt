@@ -1,0 +1,191 @@
+
+.cuttingEdge-section {
+    width: 100%;
+    margin: auto;
+
+
+
+
+}
+#cuttingEdge-text {
+    color: #7c59cd;
+    margin-top: 30px;
+    font-weight: bolder;
+
+
+}
+
+.cuttingEdge-uppersection h2 {
+    font-size: 36px;
+    width: 768px;
+    margin: auto;
+}
+
+.cuttingEdge-uppersection #cuttingEdge-para {
+    width: 768px;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+
+
+}
+.cuttingedge-lowerSection img{
+    width: 750px;
+    border: 15px solid black;
+    border-radius: 20px;
+    height: 512px;
+    z-index: 3;
+}
+
+.mobile-section img{
+width: 244px;
+height: 500px;
+position: absolute;
+left:  250px;
+z-index: 4;
+margin-top: -460px;
+
+}
+
+
+
+.cuttingEdge-features {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(3, 400px);
+    margin:40px auto;
+    padding: 30px;
+    height: 200px;
+}
+
+.feature1 {
+    padding: 30px;
+    
+}
+.feature1 .para1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.feature1 img{
+    border: 1px solid silver;
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+.feature-learnMore {
+    color: #7c59cd;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align items */
+    justify-content: center; /* Align text and arrow to the left */
+    gap: 5px; /* Add spacing between the text and arrow */
+    cursor: pointer; /* Optional: makes it clear the text is clickable */
+}
+
+.feature-learnMore-arrow {
+    width: 16px; /* Adjust size as needed */
+    height: auto;
+    border: none !important; /* Remove border */
+}
+
+/* @media (max-width: 480px) {
+
+    .cuttingEdge-uppersection h2 {
+        font-size: 30px;
+        width: 345px;
+        margin: auto;
+    }
+
+    .cuttingEdge-uppersection #cuttingEdge-para{
+        width: 345px;
+        margin: auto;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 28px;
+
+
+    }
+    .cuttingedge-lowerSection img{
+        display: none
+    }
+    .mobile-section{
+        width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-section img{
+        width: 375px;
+        height: 360px;
+        position: relative;
+        margin: 0;
+
+
+      
+     
+        
+        }
+
+
+} */
+
+
+@media (max-width: 480px) {
+    .cuttingEdge-uppersection h2 {
+        font-size: 30px;
+        width: 345px;
+        margin: auto;
+    }
+
+    .cuttingEdge-uppersection #cuttingEdge-para {
+        width: 345px;
+        margin: auto;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .cuttingedge-lowerSection img {
+        display: none;
+    }
+    .mobile-section {
+        width: 100%; /* Ensure full width */
+        height: 360px; /* Explicitly set height */
+        position: relative;
+        display: flex; /* Ensure children are centered */
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide excess image */
+        margin: 20px 0;
+      
+    }
+
+    .mobile-section img {
+        width: auto; /* Maintain natural width of the image */
+   
+        object-fit: cover; /* Ensures the center of the image is displayed */
+        position: relative; /* Ensure proper centering */
+        left: 30%;
+        top: 90%;
+       margin: 0 auto;
+        transform: translate(-50%, -50%); /* Center the image perfectly */
+    }
+    .cuttingEdge-features {
+        display: grid;
+        width: 400px;
+        grid-template-columns: repeat(1, 100%);
+        margin: auto;
+        padding: 30px;
+      
+    }
+    .feature1 {
+   
+        padding: 30px;
+        
+       
+    }
+
+}
+
+
+

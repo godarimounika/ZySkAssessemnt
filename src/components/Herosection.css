@@ -1,0 +1,128 @@
+
+.hero-container{
+    margin-top: 40px;
+    position: relative;
+    z-index: 1;
+   
+   
+
+}
+.feature{
+    
+    justify-content: center;
+    margin: auto;
+    width: 370px;
+    background-color: #ede1fd;
+    padding-bottom: 5px;
+    border-radius: 20px;
+  
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+#feature{
+    border: 1px  solid  #D6BBFB;
+    background-color: #fff;
+    border-radius: 20px;
+    padding:5px 3px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+margin-right: 30px;
+color: #6941C6;
+;
+
+}
+#feature-text{
+    color: #6941C6;
+
+}
+#arrow{
+    color: #6941C6;
+    position: relative;
+    top:5px ;
+}
+.feature-header{
+    width: 80%;
+    margin: auto;
+}
+.feature-header h2{
+    font-size: 3.2rem;
+    padding: 5px;
+    font-weight: bolder;
+}
+.feature-subtext{
+    font-weight: 400;
+    width: 50%;
+    font-size: 20px;
+    margin: auto;
+    color: gray;
+}
+
+.feature-buttons{
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+    justify-content: center;
+   gap: 40px;
+}
+.featureDemo-button{
+    border: 1px solid gray;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 15px;
+    line-height: 24px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+#play-icon{
+    position: relative;
+    top: 5px;
+    padding: 2px;
+}
+
+
+.FeatureSignup-button{
+    border: 2px solid  #7c59cd;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 15px;
+    line-height: 24px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #7c59cd;
+    letter-spacing: 1px;
+    color: white;
+}
+.hero-section-img {
+    width: 80%;
+    border: 6px solid black;
+    margin: 30px auto 0;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section-img img {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    z-index: 6;
+}
+
+@media (max-width: 480px) {
+   .feature-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   }
+   .hero-section-img {
+    max-height: auto; /* Shows full image on mobile */
+}
+}

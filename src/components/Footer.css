@@ -1,0 +1,173 @@
+
+
+
+.footer-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.footer-lists {
+    width: 1280px;
+    height: 240px;
+    border: 1px solid gray;
+    margin: auto;
+    display: flex;
+    padding-bottom: 50px;
+    border-style: none none solid none;
+}
+
+.list1 {
+    width: 176px;
+    margin: 0 20px;
+}
+
+.list1 p {
+    text-align: start;
+    font-size: 14px;
+}
+
+.list1 span {
+    position: absolute;
+    left: 220px;
+    border: 1px solid lightgreen;
+    background-color: #ECFDF3;
+    color: #ABEFC6;
+    border-radius: 3px;
+    padding: 1px 3px;
+    width: 42px;
+    height: 22px;
+}
+
+.list1 button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    height: 24px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out; /* Smooth transition for other states */
+}
+
+.list1 button:hover {
+    animation: blink 0.5s infinite; /* Apply blinking animation */
+}
+
+/* Define the blinking animation */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0.3; /* Semi-transparent */
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    height: 64px;
+    margin: 0 100px;
+}
+
+.footer-icon {
+    width: 142px;
+    height: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-icon span {
+    position: relative;
+    top: -10px;
+}
+
+
+/* Mobile View Adjustments */
+@media (max-width: 480px) {
+    .footer-wrapper {
+        width: 100%;
+        margin: auto;
+        border: 1px solid #ddd; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    }
+
+    .footer-lists {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%; 
+        border: none;
+    }
+
+    .list1 {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .list1 button {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        text-align: start;
+        height: 24px;
+        font-size: 14px; 
+        transition: all 0.3s ease-in-out; 
+    }
+
+    .list1 button:hover {
+        animation: blink 0.5s infinite; 
+    }
+    .list1 p {
+        text-align: start;
+        font-size: 14px;
+    }
+
+    .list1 span {
+        position: absolute;
+        left: 150px;
+        border: 1px solid lightgreen;
+        background-color: #ECFDF3;
+        color: #ABEFC6;
+        border-radius: 3px;
+        padding: 1px 3px;
+        width: 42px;
+        height: 22px;
+    }
+
+    .footer {
+        display: flex;
+        margin: 350px auto 0 auto;
+       /* Stack items vertically */
+        align-items: start;
+        justify-content: center;
+        width: 375px; /* Full width for mobile */
+        height: auto; /* Flexible height */
+        border-top: 1px solid #ddd; /* Add a light top border */
+        padding: 10px;
+        flex-direction: column;
+        
+    }
+
+    .footer-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .footer-icon img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .footer-icon span {
+        position: relative;
+        top: 0; /* Reset position */
+        font-size: 14px;
+    }
+}

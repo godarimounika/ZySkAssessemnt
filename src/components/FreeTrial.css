@@ -1,0 +1,87 @@
+
+
+.freeTrial-wrapper {
+    background: #f0f1f4;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.freeTrail-header {
+    width: 100%;
+    max-width: 768px; 
+    margin-bottom: 20px;
+}
+
+.freeTrail-header h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.freeTrail-header p {
+    font-size: 20px;
+    color: #475463;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.freeTrial-wrapper .btn {
+    display: flex;
+    flex-direction: row; 
+    gap: 16px; 
+    justify-content: center; 
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+}
+
+#lM-btn,
+#Gs-btn {
+    width: 128px;
+    height: 48px; 
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none; 
+}
+
+#lM-btn {
+    color: #344054;
+    background-color: #f9fafb;
+}
+
+#Gs-btn {
+    color: white;
+    background-color: #7f56d9;
+}
+#Gs-btn:hover {
+    color: white;
+    background-color: #ab89f4;
+}
+
+
+@media (max-width: 480px) {
+    .freeTrial-wrapper {
+        padding: 30px; 
+    }
+
+    .freeTrial-wrapper .btn {
+        flex-direction: column;
+        gap: 10px; 
+        width: 100%; 
+    }
+
+    #lM-btn,
+    #Gs-btn {
+        width: 100%; 
+        margin: 0;
+    }
+}

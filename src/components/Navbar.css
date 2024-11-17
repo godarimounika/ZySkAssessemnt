@@ -1,0 +1,241 @@
+.navbar-wrapper {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    border-style: none none solid none;
+    width: 100%;
+    margin-top: -30px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+    border: 2px solid transparent;
+    border-color: white;
+}
+
+/* When the navbar is highlighted (without blinking) */
+.navbar-wrapper.highlighted {
+    animation: blinkAnimation 1s ease forwards; /* Blink effect within 500ms */
+}
+
+/* Blinking effect: alternates between colors and then returns to original state */
+@keyframes blinkAnimation {
+    0% {
+        background-color: lightblue;
+        border: 2px solid #00b0ff;
+    }
+    50% {
+        background-color: white;
+        border: 2px solid transparent;
+    }
+    100% {
+        background-color: transparent;  /* Return to the default background */
+        border: 2px solid transparent;  /* Return to the default border */
+    }
+}
+
+.title {
+    font-size: larger;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 15px;
+}
+
+
+
+.nav-icon img {
+    width: 60px;
+    height: 60px;
+}
+/* .nav-items ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right:500px;
+} */
+.nav-items .li-icon {
+    padding: 2px;
+}
+/* .nav-items ul li {
+    padding: 0 20px;
+    cursor: pointer;
+} */
+
+.nav-items ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each list item in the nav */
+.nav-items ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.nav-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.hamburger-menu {
+    display: none;
+}
+
+/* Updated Dropdown Styles */
+.dropdown-wrapper {
+    position: absolute;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    display: none; /* Hide by default */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+    /* margin-left: 150px; */
+}
+.dropdown-wrapper.show {
+    display: flex; /* Show when the 'show' class is applied */
+    visibility: visible;
+    opacity: 1;
+}
+
+.col1 {
+    width: 300px;
+    background-color: white;
+    color: black;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.icon {
+    display: flex;
+    margin-left: 15px;
+}
+.dropdown-text {
+    margin-left: 50px;
+    margin-top: -15px;
+}
+.icon p {
+    margin-top: -1px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+.dropdown-img img {
+    height: 150px;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+.col2 {
+    background-color: gainsboro;
+    width: 300px;
+    border-radius:0 20px  20px 0;
+}
+
+
+
+/* profile-details */
+
+
+.profile-details {
+    position: absolute;
+    top: 60px; /* Adjust based on your layout */
+    right: 10px; /* Adjust based on your layout */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    opacity: 0;
+    width: 300px;
+    z-index: 10000;
+    border-radius: 10px;
+    transition: opacity 0.3s ease; /* For smooth fade-in effect */
+  }
+  
+  .profile-details.show {
+    display: block; /* Shows the profile details */
+    opacity: 1;
+  }
+  
+.profile-icon img{
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ padding: 5px 0 0 5px;
+}
+#profile-dot{
+    color: green;
+   position: absolute;
+top: -60px;
+left: 35px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.person-icon{
+    margin: 0;
+    width: 20px;
+    position: absolute;
+    left: 5px;
+}
+
+.person-view-profile{
+    position: relative;
+    left: 30px;
+}
+.person-symbols{
+    position: relative;
+    align-items: start;
+
+}
+.p-1:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.profile-letters{
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+.profile-header{
+display: flex;
+}
+.profile-detail1{
+    border: 1px solid black;
+    border-style: none none solid none;
+    z-index: 10;
+
+}
+.p-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+ 
+}
+/* Responsive styles */
+@media (max-width: 480px) {
+    .nav-items ul {
+        display: none; /* Hide nav items */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items ul li {
+        width: 100%;
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .nav-profile {
+        display: none;
+    }
+    .nav-items.show {
+        display: flex;
+    }
+}

@@ -1,0 +1,49 @@
+.new-prj{
+    /* border: 1px solid black; */
+    margin-top: 300px;
+    background-color:  #F9FAFB
+    ;
+
+}
+.newPrj-icon img{
+   width: 30px;
+}
+.newPrj-icon span{
+    position: relative;
+ top: -15px;
+ left: 10px;
+}
+
+.new-header {
+
+font-size: 40px;
+width: 1210px;
+margin: auto;
+}
+.newprj-profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 200px;
+    margin: auto;
+    border: 1px solid gray;
+}
+.newprj-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.newprj-text{
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    .new-prj{
+        margin-top: 1200px;
+    }
+    
+.new-header {
+
+    font-size: 30px;
+    width: 380px;
+    margin: auto;
+    }
+}
